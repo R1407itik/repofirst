@@ -2,11 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>hello world</p>
-    <h1>ritik</h1>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Restaurant Name</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>Welcome to Our Restaurant</h2>
+            <p>Experience the best dining with us</p>
+        </div>
+    </header>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Dish 1</h3>
+                <p>Description of dish 1.</p>
+                <span>$10.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Dish 2</h3>
+                <p>Description of dish 2.</p>
+                <span>$15.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Dish 3</h3>
+                <p>Description of dish 3.</p>
+                <span>$12.00</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
